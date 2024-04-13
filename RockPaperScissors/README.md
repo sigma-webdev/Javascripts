@@ -2,21 +2,18 @@
 
 ### Rock Paper Scissors Game
 
-![alt text](image.png)
-![alt text](image-1.png)
-![alt text](image-2.png)
-![alt text](image-3.png)
+![image-2](https://github.com/sigma-webdev/Javascripts/assets/107506646/84dcbac0-28ce-464d-badb-a5eadcab6220)
+![image-1](https://github.com/sigma-webdev/Javascripts/assets/107506646/348c49a2-8bc3-40cd-a4fb-0695db04c5dd)
+![image](https://github.com/sigma-webdev/Javascripts/assets/107506646/dfd54933-97bd-4b1d-b4a6-7ffb13568734)
+![image-3](https://github.com/sigma-webdev/Javascripts/assets/107506646/d14f664e-8b84-4287-b2c8-2544c7fc9824)
+
+
 
 # Description :- 
 
 This is a simple Rock Paper Scissors game implemented in JavaScript. The game allows users to play against the computer in a classic game of Rock Paper Scissors.
 
 #  How to Play
-
-![alt text](image.png)
-![alt text](image-1.png)
-![alt text](image-2.png)
-![alt text](image-3.png)
 
 ✨ Getting Started: Open the index.html file in a web browser to start the game.
 
