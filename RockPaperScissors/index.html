@@ -1,50 +1,10 @@
-
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, 
-                   initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
-    <title>Rock Paper Scissor</title>
-</head>
-<body>
-    <section class="game">
-        <div class="title">Rock Paper Scissor</div>
-        <div class="score">  
-            <div class="playerScore">
-                <h2>Player</h2>
-                <p class="p-count count">0</p>
-            </div>       
-            <div class="computerScore">
-                <h2>Computer</h2>
-                <p class="c-count count">0</p>
- 
-            </div>
-        </div>
-       
-        <div class="move">Choose your move</div>
-        <div class="movesleft">Moves Left: 10 </div>
-        <div class="options">
-            <button class="rock">Rock</button>
-            <button class="paper">Paper</button>
-            <button class="scissor">Scissors</button>    
-        </div>
-        <div class="result"></div>  
-        <button class="reload"></button>
-    </section> 
-    <script src="index.js"></script>
-</body>
-</html> 
-
-
-<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rock Paper Scissor</title>
+  <link rel="stylesheet" href="index.css">
 </head>
 <body>
   <h1>Rock Paper Scissor</h1>
@@ -53,8 +13,16 @@
   <button onclick="playGame('paper')">🤚</button>
   <button onclick="playGame('scissor')">✌️</button>
  </div>
-  <div class="playerDisplay">PLAYER : - </div>
-  <div class="computerDisplay">COMPUTER : - </div>
-  <div class="resultDisplay">RESULT: - </div>
+  <div  id="playerDisplay"> PLAYER : - </div>
+  <div id="computerDisplay"> COMPUTER : - </div>
+  <div id="resultDisplay"> </div>    
+  
+  <div id="scoreDisplay">Player Score:<span id="playerScoreDisplay">0</span></div>
+
+  <div id="scoreDisplay">Computer Score:<span id="computerScoreDisplay">0</span></div>
+
+  <script src ='index.js'></script>
 </body>
-</html> -->
+</html>
+
+

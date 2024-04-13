@@ -1,101 +1,94 @@
-*{
-  padding: 0;
+body {
+  font-family: Arial, sans-serif;
+  font-weight: bold;
   margin: 0;
-  box-sizing: border-box;
-  background: #96b6eb;
-  color: #fff;
-}
-
-.game{
   display: flex;
   flex-direction: column;
-  height: 100vh;
-  width: 100vw;
-  justify-content: center;
   align-items: center;
+  /* background-color: rgb(238, 217, 236); */
+  background-image: url('https://source.unsplash.com/random'); 
+  background-size: cover;
+  background-position: center;
 }
 
-
-.title{
-  position: absolute;
-  top: 0;
-  font-size: 4rem;
-  z-index: 2;
+h1 {
+  font-size: 3.5rem;
+  color: hsl(0, 7%, 97%);
 }
 
-.score{
-  display: flex;
-  width: 30vw;
-  justify-content: space-evenly;
-  position: absolute;
-  top: 70px;
-  z-index: 1;
+.choices {
+  margin-bottom: 30px;
 }
 
-.p-count,.c-count{
-  text-align: center;
-  font-size: 1.5rem;
-  margin-top: 1rem;
-}
-
-
-
-
-
-.rock, .paper, .scissor{
-  padding: 0.8rem;
-  width: 100px;
-  border-radius: 10px;
-  background: green;
-  outline: none;
-  border-color: green;
-  border: none;
+.choices button {
+  font-size: 7.5rem;
+  min-width: 160px;
+  margin: 0 10px;
+  border: 2px solid black;
+  border-radius: 250px;
+  background-color: hsl(90, 100%, 50%);
   cursor: pointer;
+  transition: background-color 0.5s ease;
 }
 
-.move{
+.choices button:hover {
+  background-color: hsl(90, 100%, 70%);
+}
+
+#playerDisplay {
   font-size: 2rem;
+  color: blue;
+}
+
+#computerDisplay {
+  color: blue;
+  font-size: 2rem;
+}
+
+#resultDisplay {
+  font-size: 5rem;
+  margin: 30px 0;
+  background: linear-gradient(135deg, #ffa6b7, #c9d6ff);
+  padding: 20px 30px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+#scoreDisplay {
+  font-size: 3rem;
+  border: 2px solid #4caf50;
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+
+#playerScoreDisplay,
+#computerScoreDisplay {
   font-weight: bold;
 }
 
-
-.reload {
-  display: none;
-  margin-top: 2rem;
-  padding: 1rem;
-  background: rgb(144, 248, 144);
-  outline: none;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-}
-
-
-
-@media screen and (max-width: 612px)
-{  
-  .title{
-      text-align: center;
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
   }
-  .score{
-      position: absolute;
-      top: 200px;
-      width: 100vw;
-  }
-  .options{
-      width: 100vw;
+  100% {
+    transform: rotate(360deg);
   }
 }
 
-
-.choices{
-  display: flex;
-  width: 50vw;
-  justify-content: space-evenly;
-  margin-top: 2rem;
-}
-
-.resultDisplay{
-  margin-top: 20px;
-  font-size: 1.2rem;
+#scoreDisplay {
+  animation: rotate 2s linear ;
 }
