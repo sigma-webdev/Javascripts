@@ -1,35 +1,36 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-html , body{
-    height: 100%;
-    width: 100%;
-    font-family: "Neo Sans Pro Ultra";
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "Neo Sans Pro Ultra";
 }
 
-body{
-  background-color: #CAEDF7;
+body {
+  background-color: #caedf7;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.main-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 35vw;
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 35vw;
 }
-.main-container>h1{
+.main-container > h1 {
   width: 80%;
   font-size: 3rem;
   font-weight: 600;
 }
 
-.pass-container{
+.pass-container {
   width: 100%;
   height: 8rem;
   display: flex;
@@ -39,25 +40,23 @@ body{
   margin: 2rem 0rem;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
-  border-bottom: 12px solid #006B4D;
-
+  border-bottom: 12px solid #006b4d;
 }
 
-.password{
-  width: 45rem;
+.password {
+  width: 82%;
   height: 4rem;
   font-size: 3rem;
   border: none;
   background-color: transparent;
 }
 
-.pass-container>span{
+.pass-container > span {
   font-size: 3rem;
   color: #506175;
 }
 
-
-.pass-properties{
+.pass-properties {
   width: 100%;
   height: 20rem;
   display: flex;
@@ -65,9 +64,9 @@ body{
   background-color: white;
   border-radius: 20px;
   padding: 2rem;
-  box-shadow: 0 2px 8px rgba(0,0,0,.15);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
-.pass-properties>h3{
+.pass-properties > h3 {
   font-size: 2rem;
   padding-bottom: 5px;
   text-align: start;
@@ -75,12 +74,12 @@ body{
   border-bottom: 2px solid #f0f2f5;
 }
 
-.properties{
+.properties {
   display: flex;
   height: 10rem;
 }
 
-.length{
+.length {
   width: 60%;
   display: flex;
   flex-direction: column;
@@ -88,19 +87,19 @@ body{
   /* align-items: center; */
 }
 
-.length>label{
+.length > label {
   font-size: 1.2rem;
   text-align: start;
 }
 
-#textInput{
+#textInput {
   width: 70px;
   height: 50px;
   font-size: 2rem;
 }
 
-.alphabets{
-  width: 20%;
+.alphabets {
+  width: 30%;
   font-size: 1.4rem;
   display: flex;
   flex-direction: column;
@@ -109,12 +108,12 @@ body{
   font-family: "Neo Sans Pro";
   font-weight: bold;
 }
-input[type="checkbox"]{
+input[type="checkbox"] {
   width: 20px; /*Desired width*/
   height: 20px; /*Desired height*/
 }
 
-.copy-btn{
+.copy-btn {
   width: 14rem;
   height: auto;
   padding: 10px;
@@ -123,7 +122,77 @@ input[type="checkbox"]{
   font-size: 1.4rem;
   margin-top: 2rem;
   color: white;
-  background-color: #C21E1E;
+  background-color: #c21e1e;
   border: none;
   border-radius: 30px;
+}
+
+@media only screen and (max-width: 1750px) {
+  .main-container {
+    width: 45vw;
+  }
+}
+
+@media only screen and (max-width: 1350px) {
+  .main-container {
+    width: 65vw;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .main-container {
+    width: 95vw;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .password {
+    width: 70%;
+  }
+  .alphabets {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  #textInput {
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 410px) {
+  .pass-container {
+    width: 100%;
+    height: 6rem;
+  }
+  .password {
+    font-size: 2rem;
+  }
+  .pass-container > span {
+    font-size: 2rem;
+  }
+  .properties {
+    justify-content: space-between;
+  }
+
+  .alphabets {
+    width: 50%;
+  }
+  .length > label {
+    font-size: 1rem;
+  }
+
+  #textInput {
+    width: 30px;
+    height: 30px;
+    font-size: 1rem;
+  }
+  #rangeInput {
+    width: 6rem;
+  }
+  .pass-properties {
+    padding: 1rem;
+  }
 }
