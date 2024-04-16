@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link href="https://db.onlinewebfonts.com/c/baf7b1055484a2eb9215b5e296843efd?family=Neo+Sans+Pro" rel="stylesheet">
+  <link href="https://db.onlinewebfonts.com/c/321ee068d97a3f43f7ee86ec398060e7?family=Neo+Sans+Pro+Ultra"
+    rel="stylesheet">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="main-container">
+    <h1>Generate Password</h1>
+    <div class="pass-container">
+      <input type="text" class="password" id="generatedPassword" value="lsjdflkjjfd&^&*^"></input>
+      <span class="material-symbols-outlined" onclick="copyPassword()">
+        content_copy
+      </span>
+      <span class="material-symbols-outlined" onclick="generateNewPassword(); ">
+        autorenew
+      </span>
+    </div>
+    <div class="pass-properties">
+      <h3>Customize your password</h3>
+      <div class="properties">
+        <div class="length">
+          <label for="length">Password Length</label><br>
+          <div>
+            <input type="number" id="textInput" value="" min="1" max="50" onchange="updateRangeInput(this.value);">
+            <input type="range" id="rangeInput" name="rangeInput" min="1" max="50"
+              onchange="updateTextInput(this.value);">
+          </div>
+        </div>
+        <div class="alphabets">
+          <div>
+            <input type="checkbox" id="lowercase" name="lowercase" checked="true" disabled>
+            <label for="lowercase">Lowercase</label><br>
+          </div>
+          <div>
+            <input type="checkbox" id="uppercase" name="uppercase" checked="true">
+            <label for="uppercase">Uppercase</label>
+          </div>
+          <div>
+            <input type="checkbox" id="numbers" name="numbers" checked="true">
+            <label for="numbers">Numbers</label><br>
+          </div>
+          <div><input type="checkbox" id="symbols" name="symbols" checked="true">
+            <label for="symbols">Symbols</label><br>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="copy-btn" onclick="copyPassword()">Copy Password</button>
+  </div>
+  <script src="./index.js"></script>
+</body>
+
+</html>
