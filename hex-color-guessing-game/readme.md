@@ -2,6 +2,8 @@
 
 This is a simple color guessing game where the player needs to guess the correct color based on its hex code. The game is built using HTML, Tailwind CSS, and JavaScript.
 
+
+
 ## How to Play
 
 1. **Objective**: Guess the color corresponding to the displayed hex code.
@@ -19,6 +21,8 @@ This is a simple color guessing game where the player needs to guess the correct
    - Random generation of hex color codes.
    - Interactive user interface.
    - Instant feedback on correct or incorrect guesses.
+
+![game snip](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbmI2ODI3dTJhemQyeDA0dWZ3bXRob2p4eTBiODNnc2I5bG41aDh1NCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/2oB2pkvfuycdl0vss9/giphy.gif)
 
 ## Technologies Used
 
