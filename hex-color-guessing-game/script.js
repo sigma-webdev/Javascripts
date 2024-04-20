@@ -82,7 +82,7 @@ const guessingColor = () => {
       // end game condition ----
       if(guessCount === 5 ){
         document.getElementById('score').textContent = `Your score -  ${score}/60`;
-        document.getElementById('resultMessage').textContent = success ? `Congratulations! You guessed the correct color! 🥳 in ${guessCount} attempts`: "Attempts count exceeded ☹️, Click New Game to retry "
+        document.getElementById('resultMessage').textContent = guess == targetColor ? `Congratulations! You guessed the correct color! 🥳 in ${guessCount} attempts`: "Attempts count exceeded ☹️, Click New Game to retry "
         score=0
         const checkButton = document.getElementById("guessButton")
         checkButton.disabled = true
@@ -115,8 +115,6 @@ const generateHints = (guess) => {
    
 // Function to dynamically generate guess items
 const generateGuessItems = (guessSection, guessCount, hintText, guess) => {
-
-
     const guessSection1 = document.getElementById(guessSection)
 
     for (let i = 0; i < guessCount; i++) {
