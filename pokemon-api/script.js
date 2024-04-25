@@ -1,6 +1,14 @@
+// TODO: 
+// initial dynamic data, 
+// stats bar, 
+// clear or fix hardcoded code in html
+// onClick loading  - show loading 
+// shimmer
+// color dynamic color style, 
+// bonus- animation
+
 const apiEndPoint = 'https://pokeapi.co/api/v2/pokemon';
 const speciesAboutEndPoint = 'https://pokeapi.co/api/v2/pokemon-species';
-
 
 const getRandomPokemonId = () => {
     return Math.floor(Math.random() * 898) + 1; // Generate a random Pokémon ID between 1 and 898 (total Pokémon count in the API)
@@ -81,8 +89,6 @@ const fetchPokemonData = async () => {
 function fetchAndRenderPokemondata() {
     fetchPokemonData()
     .then(pokemonData => {
-        console.log("Received Pokemon data:", pokemonData)
-
         //  set pokemon name 
         document.getElementById("pokemonName").textContent = pokemonData.name[0].toUpperCase() + pokemonData.name.substring(1)
 
@@ -123,9 +129,16 @@ function fetchAndRenderPokemondata() {
 
         // set stats
         document.getElementById("pokemonHp").textContent = pokemonData.stats.hp
+        document.getElementById("hpStat").className = `w-[${pokemonData.stats.hp}px] h-1  bg-[#4A822E] rounded-l`
+       
         document.getElementById("pokemonAtk").textContent = pokemonData.stats.atk 
+        document.getElementById("atkStat").className = `w-[${pokemonData.stats.atk}px] h-1  bg-[#4A822E] rounded-l`
+       
         document.getElementById("pokemonDef").textContent = pokemonData.stats.def 
+        document.getElementById("defStat").className = `w-[${pokemonData.stats.def}px] h-1  bg-[#4A822E] rounded-l`
+       
         document.getElementById("pokemonSpd").textContent = pokemonData.stats.spd
+        document.getElementById("spdStat").className = `w-[${pokemonData.stats.spd}px] h-1  bg-[#4A822E] rounded-l`
 
 
     })
@@ -135,4 +148,5 @@ function fetchAndRenderPokemondata() {
 
 }
 
-
+// initially set any random 
+fetchAndRenderPokemondata()
