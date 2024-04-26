@@ -12,14 +12,14 @@
 >
     <!-- the card -->
     
-    <main class="h-[600px] w-[360px] bg-[#74CB48]  mx-auto rounded]  bg-right-top
-    bg-no-repeat" 
+    <main id="main" class="h-[600px] w-[360px]  mx-auto rounded]  bg-right-top border
+    bg-no-repeat rounded" 
         style="background-image: url('./assets/Pokeball.png');"
     >
         <!-- heading  -->
         <section class=" py-1 px-2 text-white w-full  flex justify-between items-center">
-            <h1 id="pokemonName" class="text-2xl font-extrabold  "> Bulbasaur</h1>
-            <p class="font-bold" id="pokemonId"> #001</p>
+            <h1 id="pokemonName" class="text-2xl font-extrabold  "> </h1>
+            <p class="font-bold" id="pokemonId"> </p>
         </section>
 
         <!-- image -->
@@ -30,7 +30,7 @@
         </section>
 
         <!-- description -->
-        <section class="bg-white pt-12 ml-2 mr-2 rounded h-[412px]">
+        <section class="bg-white pt-12 ml-2 mr-2 rounded h-[412px] border">
             <!-- Type -->
             <div class=" flex justify-center h-8 gap-2 text-white" id="pokemonType"> 
                 <!-- <p class="bg-[#74CB48] rounded-2xl px-3 py-1 font-bold"> Grass </p>
@@ -38,7 +38,7 @@
             </div>
 
             <!-- about -->
-            <h2 class="text-[#74CB48] font-bold  text-center text-md"> About </h2>
+            <h2 id="about" class="text-[#74CB48] font-bold  text-center text-md"> About </h2>
 
             <div class="flex justify-center items-center py-2"> 
                 <!--  Weight -->
@@ -76,17 +76,17 @@
                 </div>
             </div>
 
-            <div class=" text-sm py-2 px-1 text-center">
+            <div class=" text-sm py-2 px-1 text-center text-xs">
                 <p id="pokemonAbout" >There is a plant seed on its back right from the day this Pokémon is born. The seed slowly grows larger.</p>
             </div>
 
             <!-- Stats -->
             <div class=" py-1"> 
-                <h2 class="text-lg text-center font-bold text-[#74CB48] py-0.5"> Base Stats </h2>
+                <h2 id="pokemonStat" class="text-lg text-center font-bold text-[#74CB48] py-0.5"> Base Stats </h2>
                 
                 <!-- stat title -->
                 <div class="flex text-sm gap-4 px-4">
-                    <div class="border-r pr-2 text-[#74CB48]">
+                    <div id="pokemonStatField" class="border-r pr-2">
                         <div> HP </div>
                         <div> ATK </div>
                         <div> DEF </div>
@@ -94,11 +94,11 @@
                     </div>
                     
                     <!-- Points -->
-                    <div class="text-[#74CB48]" id="stats">
+                    <div class="" id="stats">
                         <div  id="pokemonHp"> 045 </div>
-                        <div id="pokemonAtk"> 045 </div>
+                        <div id="pokemonAtk"> 049 </div>
                         <div id="pokemonDef"> 045 </div>
-                        <div  id="pokemonSpd"> 045 </div>
+                        <div  id="pokemonSpd"> 065 </div>
                     </div>
 
                     <!-- bar -->
@@ -127,7 +127,7 @@
 
     </main>
 
-    <button class="absolute bottom-5" id="randomCard" onclick="fetchAndRenderPokemondata()"> Random Cards</button>
+    <button class="absolute bottom-5 hover:bg-purple-200 hover:border px-4 rounded-xl" id="randomCard" onclick="fetchAndRenderPokemondata()"> Random Cards</button>
     
 </body>
 </html>
