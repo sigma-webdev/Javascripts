@@ -1,11 +1,3 @@
-// TODO: 
-// initial dynamic data, 
-// clear or fix hardcoded code in html
-// onClick loading  - show loading 
-// shimmer
-// color dynamic color style, 
-// bonus- animation
-
 const apiEndPoint = 'https://pokeapi.co/api/v2/pokemon';
 const speciesAboutEndPoint = 'https://pokeapi.co/api/v2/pokemon-species';
 
